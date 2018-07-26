@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovHack JS Workshop</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Queensland Rental Price Suburb Comparison</h1>
+    </header>
+    <main>
+        <section id="comparison-selector">
+            <article id="suburb-select-left" class="suburb-select">
+                <label for="suburb-select-left-input">Suburb</label>
+                <input type="text" id="suburb-select-left-input">
+            </article>
+            <button>Compare</button>
+            <article id="suburb-select-right" class="suburb-select">
+                <label for="suburb-select-right-input">Suburb</label>
+                <input type="text" id="suburb-select-right-input">
+            </article>
+        </section>
+        <section id="comparison">
+            <article id="compare-left">
+            </article>
+            <article id="compare-right">
+            </article>
+        </section>
+    </main>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/typeahead.bundle.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

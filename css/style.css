@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    color: #333;
+}
+
+header {
+    padding: 2em;
+    text-align: center;
+    background-color: #ddd;
+}
+
+#comparison-selector {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.suburb-select {
+    box-sizing: border-box;
+    padding: 0.5em;
+    width: 40%;
+}
+
+.suburb-select label {
+    font-size: smaller;
+    font-weight: 700;
+}
+
+.suburb-select label, .suburb-select input {
+    display: block;
+}
+
+.suburb-select input {
+    box-sizing: border-box;
+    padding: 0.25em 0.25em;
+    width: 100%;
+    font-size: 2em;
+}
+
+#comparison-selector button {
+    box-sizing: border-box;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 20%;
+    border-radius: 1em;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#comparison {
+    display: flex;
+    padding: 3em;
+}
+
+#comparison > article {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.5em 2em;
+}
+
+#comparison h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#comparison > article:last-of-type {
+    border-left: 4px solid #333;
+}
+
+#comparison h3 {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#comparison h4 {
+    padding-top: 0.5em;
+    padding-left: 2em;
+}
+
+#comparison h4 + p {
+    padding-left: 2.5em;
+}
+
+.twitter-typeahead {
+    display: block !important;
+}
+
+.tt-input {
+    width: 100%;
+}
+
+.tt-hint {
+    color: #888;
+}
+
+.tt-menu {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+.tt-suggestion {
+    padding: 0.25em;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+
+.tt-suggestion:last-child {
+    border-bottom: 0px;
+}
+
+.tt-suggestion:hover {
+    background-color: #ccc;
+}
+
+article.error label {
+    color: #c00;
+}
+
+article.error input {
+    border: 2px solid #c00;
+    box-shadow: 0 2px 4px 0 #c00, 0 6px 20px 0 #c00;
+}
