@@ -234,6 +234,22 @@ function cleanAndStore(data, suburb) {
 function outputDisplay(records, suburb, parentElement) {
 
 /*
+                Extension activity
+                Get image for the suburb
+*/
+
+$.ajax({
+    type: "GET",
+    url: "https://data.gov.au/api/3/action/datastore_search_sql?sql=SELECT%20*%20FROM%20%22f5ecd45e-7730-4517-ad29-73813c7feda8%22%20WHERE%20%22dcterms:spatial%22%20LIKE%20%27%"+suburb+"%%27%20LIMIT%201",
+    success: function(data) {
+        parentElement.prepend(
+            $("<img>").attr("src", JSON.parse(data).result.records[0]["150_pixel_jpg"])
+        );
+    },
+    dataType: "text"
+});
+
+/*
                 Clear out the existing data and put the suburb as a title
 */
     parentElement.html("");
