@@ -360,6 +360,11 @@ $.ajax({
                 code.
 */
     function processAndDisplayMonth(monthString, monthIndex) {
+        
+        
+        if (!suburbStats[monthIndex]) {
+            return;
+        }
         parentElement.append("<h3>"+monthString+"</h3>");
         count = 0;
 
